@@ -11,12 +11,17 @@ import static org.junit.Assert.*;
 @ContextConfiguration(classes =CdPlayerConfig.class)
 public class CdPlayerTest {
     @Autowired
-    CompDiscs compDiscs;
+    SegtPpers compDiscs;
+    @Autowired
+    SegtPpers2 comDisscs2;
 
     @Test
     public void cdNotshouldbeNull(){
         assertNotNull(compDiscs);
         System.out.println("hehehehehe");
         compDiscs.play();
+        comDisscs2.play();
+        System.out.println(compDiscs.getClass().getName());
+        
     }
 }
