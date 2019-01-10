@@ -33,7 +33,7 @@ dependencies {
     // spring测试包
     compile group: 'org.springframework', name: 'spring-test', version: '4.3.13.RELEASE'
     //Group ID: org.junit.platform   Version: 1.3.2
-  
+    Compile 'junit:junit:4.12'
 
 
 
